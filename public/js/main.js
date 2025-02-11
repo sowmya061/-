@@ -6,7 +6,8 @@ const remoteVideo = document.getElementById("remoteVideo");
 const endCallBtn = document.getElementById("end-call-btn");
 const socket = io();
 let localStream;
-let caller = [];
+
+let caller=[];
 
 // Single Method for peer connection
 const PeerConnection = (function(){
