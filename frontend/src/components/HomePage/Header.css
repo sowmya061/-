@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background: #0a1931; /* Deep Navy Blue */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .navbar h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bcd4; /* Cyan color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    font-family: Merriweather;
+  }
+  
+  .navbar h3:hover {
+    color: #29d6ff; /* Lighter Cyan */
+  }
+  
+  
+  /* Navbar Links Container */
+  .navbar-heading {
+    display: flex;
+    gap: 25px;
+    font-family: Exo;
+  }
+  
+  /* Links Styling */
+  .navbar-heading a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .navbar-heading a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Active Link Styling */
+  .navbar-heading a.active {
+    color: #00bcd4;
+    font-weight: bold;
+  }
+  
+  /* Active Tab Indicator */
+  .navbar-heading a.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #00bcd4;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+  }
+  
+  /* Auth Button */
+  .auth-button {
+    padding: 8px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #00bcd4;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Work sans;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background: #29d6ff;
+  }
+  
+  /* Mobile Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .navbar-heading {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .auth-button-container {
+      margin-top: 10px;
+    }
+  }
+  
