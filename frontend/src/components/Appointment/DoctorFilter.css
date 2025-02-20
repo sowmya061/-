@@ -1,0 +1,106 @@
+.doctor-filter-container {
+    padding: 2rem;
+    background-color: white;
+    color: #0a1931;
+    min-height: 100vh;
+}
+
+.language-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.language-buttons button {
+    padding: 10px 16px;
+    border: 2px solid #0a1931;
+    border-radius: 8px;
+    background-color: #0a1931;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.language-buttons button.active {
+    background-color: #00bcd4;
+    color: #0a1931;
+}
+
+.language-buttons button:hover,
+.language-buttons button:focus {
+    background-color: #00bcd4;
+    color: #0a1931;
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.doctor-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #f0f0f0;
+}
+
+.doctor-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.doctor-info h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0a1931;
+    margin-bottom: 5px;
+}
+
+.doctor-info p {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.appointment-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.appointment-button:hover {
+    background-color: #008c9e;
+}
+
+.no-doctors {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 2rem;
+}

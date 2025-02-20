@@ -11,11 +11,10 @@
     z-index: 1000;
   }
   
-  /* Logo Styling */
   .navbar h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    color: #00bcd4; /* Cyan color */
+    color: #00bcd4; 
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: color 0.3s ease;
@@ -23,39 +22,34 @@
   }
   
   .navbar h3:hover {
-    color: #29d6ff; /* Lighter Cyan */
+    color: #29d6ff; 
   }
   
   
-  /* Navbar Links Container */
   .navbar-heading {
     display: flex;
     gap: 25px;
     font-family: Exo;
   }
   
-  /* Links Styling */
   .navbar-heading a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     font-weight: 500;
     position: relative;
     transition: color 0.3s ease;
   }
   
-  /* Hover Effect */
   .navbar-heading a:hover {
     color: #00bcd4;
   }
   
-  /* Active Link Styling */
   .navbar-heading a.active {
     color: #00bcd4;
     font-weight: bold;
   }
   
-  /* Active Tab Indicator */
   .navbar-heading a.active::after {
     content: "";
     position: absolute;
@@ -67,9 +61,8 @@
     border-radius: 2px;
   }
   
-  /* Auth Button */
-  .auth-button {
-    padding: 8px 18px;
+  .appt-button {
+    padding: 8px 8px;
     font-size: 16px;
     font-weight: bold;
     color: white;
@@ -81,11 +74,10 @@
     transition: all 0.3s ease;
   }
   
-  .auth-button:hover {
+  .appt-button:hover {
     background: #29d6ff;
   }
   
-  /* Mobile Responsive Navbar */
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;

@@ -5,6 +5,8 @@ import Landing from "./components/HomePage/Landing";
 import Appointment from "./components/Appointment/Appointment";
 import Login from "./components/HomePage/Login";
 import Register from "./components/HomePage/Register";
+import EducationCenter from "./components/EducationCenter/EducationCenter";
+import Hospitals from "./components/Hospitals/Hospitals";
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
         <Route path="/book_appt" element={<Appointment />} />
         <Route path="/user/login" element={< Login/>} />
         <Route path="/user/register" element={<Register />} />
-
+        <Route path="/med_info" element={<EducationCenter />} />
+        <Route path="/nearby_hospitals" element={<Hospitals />} />
       </Routes>
     </BrowserRouter> 
   );

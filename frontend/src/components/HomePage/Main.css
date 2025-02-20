@@ -1,0 +1,43 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background: #0a1931; 
+    color: white;
+  }
+  .main-left .main-image {
+    width: 420px;
+    height: auto;
+    border-radius: 16px;
+    margin-left: 60px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .main-left .main-image:hover {
+    transform: scale(1.05);
+  }
+  .main-right {
+    text-align: left;
+    max-width: 500px;
+  }
+  .tagline-big {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .tagline-small {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  .button-group Button {
+    margin-right: 12px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+  }
+  .book-call:hover {
+    background-color: #2c6fc0;
+  }
+  

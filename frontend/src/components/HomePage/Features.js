@@ -21,10 +21,8 @@ function Features() {
             Our Key Features
           </div>
 
-          {/* FIXED: Ensure all feature-boxes are inside feature-container */}
           <div className='feature-container'>
 
-             {/* Feature 1 */}
              <div className='feature-box'>
                 <div className='feature-header'>
                     <div className='feature-icon'>
@@ -41,7 +39,6 @@ function Features() {
                 </div>
              </div>
 
-             {/* Feature 2 */}
              <div className='feature-box'>
                 <div className='feature-header'>
                     <div className='feature-icon'>
@@ -58,7 +55,6 @@ function Features() {
                 </div>
              </div>
 
-             {/* Feature 3 */}
              <div className='feature-box'>
                 <div className='feature-header'>
                     <div className='feature-icon'>
@@ -74,7 +70,7 @@ function Features() {
                 </div>
              </div>
 
-          </div> {/* Feature container closing div */}
+          </div> 
         </div>
     </div>
   )
