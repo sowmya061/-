@@ -6,12 +6,12 @@ const Header = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo">
-        <h3>MEDICARE</h3>
+        <h3>SwasthyaSetu</h3>
       </NavLink>
 
       <div className="navbar-heading">
         <NavLink to="/book_appt" activeClassName="active">
-          <span>Appointment</span>
+          <span>Online Consultation</span>
         </NavLink>
         <NavLink to="/med_info" activeClassName="active">
           <span>Education Center</span>
@@ -19,11 +19,17 @@ const Header = () => {
         <NavLink to="/ai_assist" activeClassName="active">
           <span>AI Assistant</span>
         </NavLink>
+        <NavLink to="/med_diag" activeClassName="active">
+          <span>Medical Diagnosis</span>
+        </NavLink>
+        <NavLink to="/nearby_hospitals" activeClassName="active">
+          <span>Hospitals Nearby</span>
+        </NavLink>
       </div>
 
-      <div className="auth-button-container">
+      <div className="appt-container">
         <NavLink to="/user/login">
-          <button className="auth-button">LOGIN</button>
+          <button className="appt-button">Book Appointment</button>
         </NavLink>
       </div>
     </nav>

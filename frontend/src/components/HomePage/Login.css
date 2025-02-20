@@ -1,105 +1,107 @@
-
 .main-content-login {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-  
-  /* Form container with blue box */
-  .form-container-login {
-    background-color: #ffffff; /* White background inside the box */
-    border: 3px solid #c9daeeef; /* Blue border for the box */
-    border-radius: 10px;
-    padding: 40px;
-    width: 400px;
-    text-align: center;
-    
-    /* Circular glow effect */
-    box-shadow: 0 0 50px 20px rgba(126, 154, 186, 0.5); /* Larger blur and spread */
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for hover */
-  }
-  
-  .form-container-login:hover {
-    box-shadow: 0 0 70px 30px rgba(126, 154, 186, 0.7); /* Stronger glow on hover */
-  }
-  
-  /* Headings */
-  .form-container-login h1 {
-    font-size: 45px;
-    color: #4f6782ef; /* Blue heading */
-    margin-bottom: 10px;
-  }
-  
-  .form-container-login h3 {
-    font-size: 18px;
-    color: #555555; /* Subtle secondary color */
-    margin-bottom: 20px;
-  }
-  
-  /* Form group styles */
-  .form-group-login {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    position: relative;
-  }
-  
-  .input-box-login {
-    width: 100%; /* Ensure full width */
-    padding: 12px 45px; /* Add padding-left for the icon */
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    outline: none;
-    font-size: 16px;
-  }
-  
-  .input-box-login:focus {
-    border-color: #083361; /* Blue border on focus */
-    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3); /* Light glow on focus */
-  }
-  
-  /* Icons */
-  .user-icon,
-  .lock-icon {
-    position: absolute;
-    left: 15px; /* Adjust spacing between icon and input box */
-    font-size: 20px; /* Ensure icons are sized appropriately */
-    color: #555555;
-  }
-  
-  /* Button styles */
-  .login-btn {
-    background-color: #9eadcf; /* Blue button */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 12px 20px;
-    font-size: 18px;
-    font-weight:bold;
-    cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease;
-  }
-  
-  .login-btn:hover {
-    background-color: #9eadcfa0; /* Lighter blue on hover */
-  }
-  
-  /* Signup link */
-  .login-end {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #555555;
-  }
-  
-  .login-end-link {
-    color: #4f6782ef;
-    text-decoration: none;
-  }
-  
-  .login-end-link:hover {
-    text-decoration: underline;
-  }
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.form-container-login {
+  background-color: #ffffff; 
+  border: 3px solid #00bcd4;
+  border-radius: 15px;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 50px 20px rgba(10, 25, 49, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container-login:hover {
+  box-shadow: 0 0 70px 30px rgba(10, 25, 49, 0.7);
+}
+
+.form-container-login h1 {
+  font-size: 45px;
+  color: #00bcd4; /* Primary color */
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 10px;
+}
+
+.form-container-login h3 {
+  font-size: 18px;
+  color: #0a1931; 
+  font-family: 'Verdana', sans-serif;
+  margin-bottom: 20px;
+}
+
+.form-group-login {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-box-login {
+  width: 100%;
+  padding: 12px 45px;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.input-box-login:focus {
+  border-color: #0a1931;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+}
+
+.user-icon,
+.lock-icon {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  color: #0a1931;
+}
+
+.login-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-btn:hover {
+  background-color: #0a1931;
+  transform: translateY(-3px);
+  color: #ffffff;
+}
+
+.login-end {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #0a1931;
+  font-family: 'Verdana', sans-serif;
+}
+
+.login-end-link {
+  color: #00bcd4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-end-link:hover {
+  text-decoration: underline;
+  color: #0a1931;
+}
